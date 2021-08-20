@@ -15,11 +15,14 @@
 
 #固件架构
 cat >> .config <<EOF
-CONFIG_MODULES=y
-CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_TARGET_ath79=y
 CONFIG_TARGET_ath79_generic=y
-CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wdr6500-v2=y
+CONFIG_TARGET_BOARD="ath79"
+CONFIG_TARGET_SUBTARGET="generic"
+CONFIG_TARGET_PROFILE="DEVICE_tplink_tl-wdr6500-v2"
+CONFIG_DEFAULT_luci-app-ssr-plus=y
+CONFIG_LUCI_LANG_zh-cn=y
+CONFIG_PACKAGE_luci-app-easymesh=y
 
 EOF
 
@@ -28,10 +31,7 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-unblockmusic is not set
-EOF
+# CONFIG_PACKAGE_luci-app-argon-config is not set
+# CONFIG_PACKAGE_luci-app-jd-dailybonus is not set
 
-#启用软件
-cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-argon-config=y
-CONFIG_PACKAGE_luci-app-jd-dailybonus=y
 EOF
