@@ -12,7 +12,7 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-
+sed -i 's/KERNEL_PATCHVER=5.4/KERNEL_PATCHVER=5.10/g' target/linux/ath79/Makefile #修改内核版本
 #固件架构
 cat >> .config <<EOF
 CONFIG_TARGET_ath79=y
