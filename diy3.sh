@@ -14,9 +14,11 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 #固件架构
 cat >> .config <<EOF
+CONFIG_MODULES=y
+CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_TARGET_ath79=y
 CONFIG_TARGET_ath79_generic=y
-CONFIG_TARGET_PROFILE="DEVICE_tplink_tl-wdr6500-v2"
+CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wdr6500-v2=y
 CONFIG_DEFAULT_luci-app-ssr-plus=y
 
 EOF
