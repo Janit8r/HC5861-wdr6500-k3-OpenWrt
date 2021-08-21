@@ -16,11 +16,8 @@
 cat >> .config <<EOF
 CONFIG_TARGET_ath79=y
 CONFIG_TARGET_ath79_generic=y
-CONFIG_TARGET_BOARD="ath79"
-CONFIG_TARGET_SUBTARGET="generic"
 CONFIG_TARGET_PROFILE="DEVICE_tplink_tl-wdr6500-v2"
 CONFIG_DEFAULT_luci-app-ssr-plus=y
-CONFIG_LUCI_LANG_zh-cn=y
 
 EOF
 
