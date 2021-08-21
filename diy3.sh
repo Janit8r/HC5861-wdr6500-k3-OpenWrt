@@ -19,7 +19,6 @@ CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_TARGET_ath79=y
 CONFIG_TARGET_ath79_generic=y
 CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wdr6500-v2=y
-CONFIG_DEFAULT_luci-app-ssr-plus=y
 
 EOF
 
